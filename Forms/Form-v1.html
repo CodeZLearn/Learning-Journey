@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Form</title>
+</head>
+
+<body>
+    <h2>Simple HTML Form</h2>
+
+    <form>
+        <label for="userName">=>Name</label><br>
+        <input type="text" id="userName" name="username" placeholder="Enter Your Name" required><br><br>
+
+        <label for="userEmail">=>Email</label><br>
+        <input type="email" id="userEmail" name="user_email" placeholder="Enter Your Email" title="Please enter @gmail"
+            required><br><br>
+
+
+        <label for="userPhone">=>Contact</label><br>
+        <input type="tel" id="userPhone" name="user_phone" placeholder="Enter Your Number" pattern="[0-9]*"
+            title="Please enter numbers only" required><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>
