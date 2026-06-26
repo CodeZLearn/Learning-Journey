@@ -1,0 +1,11 @@
+    @import url('https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap');
+
+    body {
+        background-image: url(../images/background-image.jpg);
+        font-family: "Jura", sans-serif;
+        font-weight: 300;
+    }
+
+    textarea {
+        resize: none;
+    }

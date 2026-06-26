@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <div class="container mt-5 ">
+        <div class="card shadow p-4 bg-secondary text-light fs-4">
+            <h2 class="text-center mb-4">Contact Form</h2>
+
+
+            <form >
+
+
+                <div class="mb-3">
+                    <label for="userEmail" class="form-label"><i class="bi bi-envelope-fill "></i> Email</label>
+                    <input type="email" id="userEmail" class="form-control" name="useremail"
+                        placeholder="Enter your email" required>
+                </div>
+
+
+                <div class="mb-3">
+                    <label for="appDescription" class="form-label"><i class="bi bi-chat-left-text-fill"></i> Description</label>
+                    <textarea class="form-control" id="appDescription" name="appdescription" rows="5"
+                        placeholder="Enter summary..." required></textarea>
+                </div>
+
+                <div class="mb-3">
+                    <label for="categoryselect" class="form-label"> <i class="bi bi-grid-fill"></i> Category</label>
+                    <select class="form-select" id="categoryselect" name="category" required>
+                        <option value="" selected disabled>Select Category</option>
+                        <option>Request</option>
+                        <option>Complain</option>
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label for="userPicture" class="form-label"> <i class="bi bi-image-fill"></i> Upload Screenshot</label>
+                    <input type="file" class="form-control" id="userPicture" name="pic" accept="image/*" required>
+                </div>
+                <div class="d-flex justify-content-center gap-2">
+                     <button type="reset" class="btn btn-dark ">
+                        Reset
+                    </button>
+                    <button type="submit" class="btn btn-primary" >
+                        Submit
+                    </button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
